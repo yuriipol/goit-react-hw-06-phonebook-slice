@@ -4,11 +4,8 @@ import Form from './Form';
 import Filter from './Filter';
 
 import { useSelector, useDispatch } from 'react-redux';
-import {
-  addContact,
-  delContact,
-} from '../redux/items/phone-book-items-actions';
-import { addFilter } from 'redux/filter/phoneBookFilter-actions';
+import { addContact, delContact } from '../redux/items/phone-book-items-slice';
+import { addFilter } from 'redux/filter/phoneBookFilter-slice';
 import { getContacts } from '../redux/items/phone-book-items-selector';
 import { getFilter } from '../redux/filter/phoneBookFilter-selector';
 
